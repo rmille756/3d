@@ -1,0 +1,226 @@
+solid 20mmx20mmx210mm rectangular tube
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 18.0 18.0 210.0
+vertex 18.0 2.0 0.0
+vertex 18.0 2.0 210.0
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 18.0 2.0 0.0
+vertex 18.0 18.0 210.0
+vertex 18.0 18.0 0.0
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 18.0 18.0 210.0
+vertex 2.0 18.0 0.0
+vertex 18.0 18.0 0.0
+endloop
+endfacet
+facet normal 0.0 -1.0 0.0
+outer loop
+vertex 2.0 18.0 0.0
+vertex 18.0 18.0 210.0
+vertex 2.0 18.0 210.0
+endloop
+endfacet
+facet normal 1.0 -0.0 -0.0
+outer loop
+vertex 2.0 18.0 0.0
+vertex 2.0 2.0 210.0
+vertex 2.0 2.0 0.0
+endloop
+endfacet
+facet normal 1.0 -0.0 -0.0
+outer loop
+vertex 2.0 2.0 210.0
+vertex 2.0 18.0 0.0
+vertex 2.0 18.0 210.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 0.0 20.0 0.0
+vertex 2.0 18.0 0.0
+vertex 0.0 0.0 0.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 2.0 18.0 0.0
+vertex 0.0 20.0 0.0
+vertex 20.0 20.0 0.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 2.0 18.0 0.0
+vertex 20.0 20.0 0.0
+vertex 18.0 18.0 0.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 18.0 18.0 0.0
+vertex 20.0 20.0 0.0
+vertex 18.0 2.0 0.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 0.0 0.0 0.0
+vertex 2.0 2.0 0.0
+vertex 20.0 0.0 0.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 2.0 2.0 0.0
+vertex 0.0 0.0 0.0
+vertex 2.0 18.0 0.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 20.0 0.0 0.0
+vertex 2.0 2.0 0.0
+vertex 18.0 2.0 0.0
+endloop
+endfacet
+facet normal 0.0 0.0 -1.0
+outer loop
+vertex 20.0 0.0 0.0
+vertex 18.0 2.0 0.0
+vertex 20.0 20.0 0.0
+endloop
+endfacet
+facet normal -0.0 1.0 -0.0
+outer loop
+vertex 2.0 2.0 210.0
+vertex 18.0 2.0 0.0
+vertex 2.0 2.0 0.0
+endloop
+endfacet
+facet normal -0.0 1.0 -0.0
+outer loop
+vertex 18.0 2.0 0.0
+vertex 2.0 2.0 210.0
+vertex 18.0 2.0 210.0
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 0.0 20.0 210.0
+vertex 0.0 0.0 0.0
+vertex 0.0 0.0 210.0
+endloop
+endfacet
+facet normal -1.0 0.0 0.0
+outer loop
+vertex 0.0 0.0 0.0
+vertex 0.0 20.0 210.0
+vertex 0.0 20.0 0.0
+endloop
+endfacet
+facet normal -0.0 -1.0 -0.0
+outer loop
+vertex 20.0 0.0 210.0
+vertex 0.0 0.0 0.0
+vertex 20.0 0.0 0.0
+endloop
+endfacet
+facet normal -0.0 -1.0 -0.0
+outer loop
+vertex 0.0 0.0 0.0
+vertex 20.0 0.0 210.0
+vertex 0.0 0.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 0.0 0.0 210.0
+vertex 2.0 2.0 210.0
+vertex 0.0 20.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 2.0 2.0 210.0
+vertex 0.0 0.0 210.0
+vertex 20.0 0.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 2.0 2.0 210.0
+vertex 20.0 0.0 210.0
+vertex 18.0 2.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 18.0 2.0 210.0
+vertex 20.0 0.0 210.0
+vertex 18.0 18.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 0.0 20.0 210.0
+vertex 2.0 18.0 210.0
+vertex 20.0 20.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 2.0 18.0 210.0
+vertex 0.0 20.0 210.0
+vertex 2.0 2.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 20.0 20.0 210.0
+vertex 2.0 18.0 210.0
+vertex 18.0 18.0 210.0
+endloop
+endfacet
+facet normal -0.0 -0.0 1.0
+outer loop
+vertex 20.0 20.0 210.0
+vertex 18.0 18.0 210.0
+vertex 20.0 0.0 210.0
+endloop
+endfacet
+facet normal -0.0 1.0 0.0
+outer loop
+vertex 0.0 20.0 210.0
+vertex 20.0 20.0 0.0
+vertex 0.0 20.0 0.0
+endloop
+endfacet
+facet normal -0.0 1.0 0.0
+outer loop
+vertex 20.0 20.0 0.0
+vertex 0.0 20.0 210.0
+vertex 20.0 20.0 210.0
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 20.0 20.0 0.0
+vertex 20.0 0.0 210.0
+vertex 20.0 0.0 0.0
+endloop
+endfacet
+facet normal 1.0 0.0 0.0
+outer loop
+vertex 20.0 0.0 210.0
+vertex 20.0 20.0 0.0
+vertex 20.0 20.0 210.0
+endloop
+endfacet
+endsolid 20mmx20mmx210mm rectangular tube

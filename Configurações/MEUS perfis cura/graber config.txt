@@ -1,0 +1,37 @@
+INICIO 
+
+G28; Início todos os eixos
+M420 S1
+G1 Z15.0 F1000; Mover para cima 15mm a 1000mm / min
+G92 E0; Redefina o comprimento da extrusora para zero
+G1 X0.0 Y0.0 F1000.0; vá para a borda da área de impressão
+G1 Z0.200 F1000.0; Vá para a posição Iniciar Z
+G1 X60.0 E9.0 F1000.0; linha de introdução
+G1 X100.0 E21.5 F1000.0; linha de introdução
+G92 E0.0; redefinir a posição da distância da extrusora
+
+
+FIM
+G91; Definir modo de posicionamento relativo
+G1 E-5 F600; retrair ligeiramente o filamento
+M140 S0; Desligue o aquecedor da cama
+M104 S0; Desligue o aquecedor de bico
+G28 X; Início do eixo X
+G0 Y200 F600; Traga a cama para a frente para facilitar a remoção da impressão
+M84; Desligue os motores
+G90; posicionamento absoluto
+
+M300 S329 P350
+M300 S311 P350
+M300 S329 P350
+M300 S311 P350
+M300 S329 P350
+M300 S246 P400
+M300 S293 P400
+M300 S261 P400
+M300 S220 P1000; To Elise Congrats
+
+
+M117 IMPRESSAO PRONTA ; Update the LCD screen with “Done!”
+G90; posicionamento absoluto
+
