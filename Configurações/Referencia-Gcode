@@ -1,0 +1,85 @@
+//Códigos implementados
+
+// G0 -> G1
+// G1 - Movimento Coordenado X Y Z E
+// G2 - CW ARC
+// G3 - CCW ARC
+// G4 - Intervalo S<segundos> ou P<milissegundos>
+// G10 - retrai o filamento de acordo com as configurações de M207
+// G11 - retrai o filamento de recuperação de acordo com as configurações de M208
+// G28 - Home todos os eixos
+// G29 - Z-Probe detalhado, sonda o leito em 3 pontos. Você deve estar na posição inicial para que isso funcione corretamente.
+// G30 - Sonda Z Simples, sonda o leito na localização XY atual.
+// G90 - Usar Coordenadas Absolutas
+// G91 - Usar Coordenadas Relativas
+// G92 - Define a posição atual para as coordenadas fornecidas
+
+// Códigos M
+// M0 - Parada incondicional - Espera o usuário apertar um botão no LCD (Somente se ULTRA_LCD estiver habilitado)
+// M1 - O mesmo que M0
+// M17 - Ativar/Alimentar todos os motores de passo
+// M18 - Desabilita todos os motores de passo; igual a M84
+// M42 - Alterar o estado do pino via gcode Use M42 Px Sy para definir o pino x para o valor y, ao omitir Px, o led onboard será usado.
+// M80 - Liga a Fonte de Alimentação
+// M81 - Desliga a alimentação
+// M82 - Definir códigos E absolutos (padrão)
+// M83 - Definir códigos E relativos enquanto estiver no modo Coordenadas Absolutas (G90)
+// M84 - Desabilita os steppers até o próximo movimento,
+// ou use S<segundos> para especificar um tempo limite de inatividade, após o qual os steppers serão desabilitados. S0 para desabilitar o timeout.
+// M85 - Definir o temporizador de desligamento por inatividade com o parâmetro S<segundos>. Para desabilitar ajuste zero (padrão)
+// M92 - Definir axis_steps_per_unit - mesma sintaxe que G92
+// M104 - Definir temperatura alvo do extrusor
+// M105 - Ler temperatura atual
+// M106 - Ventilador ligado
+// M107 - Ventilador desligado
+// M109 - Sxxx Espera que a temperatura atual do extrusor atinja a temperatura alvo. Espera apenas durante o aquecimento
+// Rxxx Espera que a temperatura atual do extrusor atinja a temperatura alvo. Espera ao aquecer e resfriar
+// M114 - Saída da posição atual para porta serial
+// M115 - Cadeia de capacidades
+// M117 - exibir mensagem
+// M119 - Saída do status Endstop para porta serial
+// M128 - EtoP Open (BariCUDA EtoP = eletricidade para transdutor de pressão de ar por jmil)
+// M129 - EtoP Fechado (BariCUDA EtoP = transdutor de eletricidade para pressão de ar por jmil)
+// M140 - Definir temperatura alvo do leito
+// M150 - Definir saída de cor BlinkM R: Vermelho<0-255> U(!): Verde<0-255> B: Azul<0-255> sobre i2c, G para verde não funciona.
+// M190 - Sxxx Espera que a temperatura atual do leito atinja a temperatura alvo. Espera apenas durante o aquecimento
+// Rxxx Espera que a temperatura atual do leito atinja a temperatura alvo. Espera ao aquecer e resfriar
+// M200 D<milímetros>- defina o diâmetro do filamento e defina as unidades do eixo E em milímetros cúbicos (use S0 para definir novamente em milímetros).
+// M201 - Definir aceleração máxima em unidades/s^2 para movimentos de impressão (M201 X1000 Y1000)
+// M202 - Definir aceleração máxima em unidades/s^2 para movimentos de deslocamento (M202 X1000 Y1000) Não utilizado em Marlin!!
+// M203 - Defina a taxa de avanço máxima que sua máquina pode sustentar (M203 X200 Y200 Z300 E10000) em mm/s
+// M204 - Definir aceleração padrão: S movimentos normais T filamento apenas se move (M204 S3000 T7000) im mm/seg^2 também define o tempo de segmento mínimo em ms (B20000) para evitar buffer underruns e M20 taxa de alimentação mínima
+// M205 - configurações avançadas: velocidade mínima de deslocamento S=durante a impressão T=somente deslocamento, B=tempo mínimo do segmento X= máximo xy jerk, Z=máximo Z jerk, E=máximo E jerk
+// M206 - definir deslocamento de retorno adicional
+// M207 - ajuste o comprimento de retração S[mm positivo] F[velocidade de avanço mm/min] Z[zlift adicional/salto], permanece em mm independentemente da configuração de M200
+// M208 - define o comprimento de recuperação=desretração S[excesso de mm positivo para o M207 S*] F[avanço mm/min]
+// M209 - S<1=verdadeiro/0=falso> ativar a detecção automática de retração se o cortador não suportar G10/11: todo movimento normal de extrusão somente será classificado como retração, dependendo da direção.
+// M218 - definir o deslocamento do hotend (em mm): T<extruder_number> X<offset_on_X> Y<offset_on_Y>
+// M220 S<fator em porcentagem>- definir a porcentagem de substituição do fator de velocidade
+// M221 S<fator em porcentagem>- define a porcentagem de substituição do fator de extrusão
+// M226 P<número do pino> S<estado do pino>- Espera até que o pino especificado atinja o estado requerido
+// M240 - Acionar uma câmera para tirar uma fotografia
+// M250 - Definir o contraste do LCD C<valor de contraste> (valor 0..63)
+// M280 - define a posição absoluta do servo. P: índice servo, S: ângulo ou microssegundos
+// M300 - Toca o som do bipe S<frequência Hz> P<duração ms>
+// M301 - Definir parâmetros PID P I e D
+// M302 - Permitir extrusões frias ou definir a extrusão mínima S<temperatura>.
+// M303 - Autoajuste do relé PID S<temperatura> define a temperatura alvo. (temperatura alvo padrão = 150C)
+// M304 - Definir os parâmetros PID do leito P I e D
+// M400 - Termina todos os movimentos
+// M401 - Sonda z inferior, se presente
+// M402 - Levantar z-probe se presente
+// M500 - armazena parâmetros na EEPROM
+// M501 - lê os parâmetros da EEPROM (se você precisar redefini-los depois de alterá-los temporariamente).
+// M502 - reverte para as "configurações de fábrica" padrão. Você ainda precisa armazená-los na EEPROM posteriormente, se desejar.
+// M503 - imprime as configurações atuais (da memória não da eeprom)
+// M540 - Use S[0|1] para habilitar ou desabilitar a parada de impressão do cartão SD no endstop hit 
+// M600 - Pausa para troca de filamento X[pos] Y[pos] Z[elevação relativa] E[retração inicial] L[distância de retração posterior para remoção]
+// M666 - definir ajuste delta endstop
+// M907 - Ajusta a corrente do motor do trimpot digital usando códigos de eixo.
+// M908 - Controla o trimpot digital diretamente.
+// M350 - Define o modo de micropasso.
+// M351 - Alterna os pinos MS1 MS2 diretamente.
+// M928 - Inicia o registro SD (M928 filename.g) - finalizado por M29
+// M523 - Controle de anel de LED
+// M999 - Reinicia após ser parado por erro
